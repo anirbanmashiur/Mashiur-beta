@@ -1,2 +1,0 @@
-# Mashiur beta
-beta
