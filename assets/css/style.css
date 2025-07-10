@@ -4810,7 +4810,7 @@ body.light-skin button:focus {
 body.light-skin .header .logo img,
 body.light-skin .preloader .spinner-logo img,
 body.light-skin .profile-box .signature img {
-  filter: brightness(1) invert(1);
+  /* filter: brightness(1) invert(1); */
 }
 @media only screen and (max-width: 767px) {
   body.light-skin .header .cart-btn.active .cart-icon {
