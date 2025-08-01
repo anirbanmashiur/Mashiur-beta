@@ -1,0 +1,329 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.detailsWrap{
+    margin: auto;
+    padding-left: 40px;
+    
+}
+
+
+
+.about-intro-section {
+    background-color: #f2f2f2;
+    padding: 60px 20px; 
+    text-align: center;
+
+}
+
+.about-intro-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    gap: 30px;
+}
+
+.about-page-image {
+    width: 500px; 
+    
+    
+    object-fit: cover;
+   
+    
+}
+
+.about-text {
+    text-align: center; /* Center text on mobile */
+}
+
+.about-text h1 {
+    font-size: 2.5em;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Details Section */
+.details-section {
+    background-color: var(--background-light);
+    margin-top: 20px;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 20px;
+    max-width: 600px;
+    margin: 50px auto 0;
+}
+
+.detail-item {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px var(--shadow-light);
+    text-align: center;
+}
+
+.detail-item h3 {
+    font-size: 1.1em;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.detail-item p {
+    font-size: 1em;
+    color: var(--text-color);
+}
+
+
+/* Timeline Style (for Experience, Education, Volunteering) */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto 0;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px; /* Adjust for mobile dot alignment */
+    top: 0;
+    width: 3px;
+    background-color: #ddd;
+    height: 100%;
+    z-index: 0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 50px; /* Space for the dot */
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 10px; /* Aligned with the line */
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    border: 3px solid var(--white);
+    z-index: 1;
+}
+
+.timeline-content {
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px var(--shadow-light);
+}
+
+.timeline-content h3 {
+    font-size: 1.3em;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.timeline-content .company,
+.timeline-content .institution,
+.timeline-content .organization {
+    font-size: 1.1em;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.timeline-content .duration {
+    font-size: 0.9em;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.timeline-content ul {
+    list-style: disc;
+    margin-left: 20px;
+    color: #444;
+}
+
+.timeline-content ul li {
+    margin-bottom: 5px;
+}
+
+
+/* Awards Section */
+.awards-section {
+    background-color: var(--background-light);
+}
+
+.awards-list {
+   
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 20px;
+    max-width: 600px;
+    margin: 50px auto 0;
+}
+.awards-list img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.award-item {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px var(--shadow-light);
+    text-align: center;
+}
+
+.award-item h3 {
+    font-size: 1.2em;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.award-item .award-info {
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+}
+
+/* --- Media Queries for About Page --- */
+
+/* Small devices (e.g., tablets) - Breakpoint at 700px */
+@media (min-width: 700px) {
+
+    .detailsWrap{
+    margin: auto;
+    padding-left: 120px;
+    
+}
+    .about-intro-section {
+        padding: 80px 40px;
+    }
+
+    .about-intro-content {
+        flex-direction: row; /* Side-by-side for tablet and desktop */
+        text-align: left; /* Align text left when beside image */
+        max-width: 900px; /* Wider content for tablets */
+    }
+
+    .about-page-image {
+        width: 550px;
+        
+    }
+
+    .about-text {
+        text-align: left; /* Align text left */
+        flex: 1; /* Allow text to take remaining space */
+    }
+
+    .about-text h1 {
+        font-size: 3em;
+    }
+
+    .details-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for details */
+        max-width: 800px;
+    }
+
+    /* Timeline for tablets/desktops - adjust dot position for better visual balance */
+    .timeline::before {
+        left: 50%; /* Center the line */
+        transform: translateX(-50%);
+    }
+
+    .timeline-item {
+        margin-bottom: 60px;
+        padding-left: 0; /* Remove left padding */
+        display: flex;
+        justify-content: center;
+    }
+
+    .timeline-dot {
+        left: 50%;
+        transform: translateX(-50%); /* Center the dot over the line */
+        top: 0; /* Align dot with the top of the item */
+    }
+
+    .timeline-content {
+        width: 45%; /* Content takes half width on either side of the line */
+        /* Make items alternate sides of the line for a more traditional timeline look */
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content {
+        margin-right: calc(50% + 20px); /* Push content to left, leave space for line+dot */
+        text-align: right;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content {
+        margin-left: calc(50% + 20px); /* Push content to right */
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-dot {
+        transform: translateX(-50%); /* Ensures dot remains centered on line */
+    }
+
+    .timeline-item:nth-child(even) .timeline-dot {
+        transform: translateX(-50%); /* Ensures dot remains centered on line */
+    }
+
+    .awards-list {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for awards */
+        max-width: 800px;
+    }
+}
+
+/* Large devices (e.g., desktops) - Breakpoint at 1000px */
+@media (min-width: 1000px) {
+    .about-intro-section {
+        padding: 100px 80px;
+        
+    }
+    .about-intro-content{
+       
+        max-width: 1000px;
+
+    }
+
+    .about-page-image {
+        width: 550px;
+        height: auto;
+       
+    }
+
+    .about-text h1 {
+        font-size: 3.5em;
+    }
+
+    .about-text p {
+        font-size: 1.2em;
+    }
+
+    .details-grid {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for details on large desktop */
+        max-width: 900px;
+    }
+
+    .awards-list {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for awards on large desktop */
+        max-width: 900px;
+    }
+}
+
+
+
