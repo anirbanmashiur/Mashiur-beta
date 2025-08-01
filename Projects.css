@@ -1,0 +1,312 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.project-main {
+    padding: 60px 80px;
+    background-color: rgb(255, 247, 235);
+}
+
+.project-case-study {
+    background-color:rgb(255, 255, 247);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* --- Project Overview Section --- */
+.project-overview {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.project-overview h1 {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.project-intro {
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    line-height: 1.5;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.meta-item {
+    text-align: center;
+}
+
+.meta-item h3 {
+    font-size: 1.1rem;
+    color: var(--dark-color);
+    margin-bottom: 5px;
+}
+
+.meta-item p {
+    font-size: 0.95rem;
+    color: var(--secondary-color);
+}
+
+/* --- Section Divider --- */
+.section-divider {
+    border: none;
+    border-top: 1px dashed var(--border-color);
+    margin: 20px 0;
+}
+
+/* --- Case Study Sections --- */
+.case-study-section {
+    margin-bottom: 0px;
+}
+
+.case-study-section h2 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+   background: linear-gradient(to right, rgb(255, 197, 38,0.2), rgba(255, 165, 0, 0));
+   
+    display: block;
+    padding-left: 20px;
+    
+    
+}
+
+.case-study-section h3 {
+    font-size: 1.8rem;
+    color: var(--dark-color);
+    
+}
+
+/* New: Side-by-Side Layout for Text and Image */
+.text-image-layout {
+    display: flex;
+    align-items: center; /* Vertically align items in the middle */
+    gap: 40px; /* Space between text and image */
+    margin: 40px 0; /* Margin around this layout block */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.text-image-layout.reverse {
+    flex-direction: row-reverse; /* Image on left, text on right */
+}
+
+.text-image-layout .text-content {
+    flex: 1; /* Allows text to take available space */
+    min-width: 300px; /* Minimum width before wrapping */
+}
+
+/* Image Containers */
+.image-container {
+    flex: 1; 
+    min-width: 100px; 
+    text-align: center; 
+    margin: 0; 
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+    display: block;
+    margin: 0 auto;
+}
+
+.image-container.wide-image img {
+    max-width: 100%;
+}
+
+.image-caption {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* --- Next Project Navigation --- */
+.next-project-nav {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+   
+}
+
+.gallery-section {
+  padding: 2rem;
+ 
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.gallery-section h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  padding-top: 5%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80vh;
+  border-radius: 10px;
+  animation: zoom 0.3s ease;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.7);}
+  to {transform: scale(1);}
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .project-main {
+        padding: 40px 0;
+    }
+
+    .project-case-study {
+        padding: 30px;
+    }
+
+    .project-overview h1 {
+        font-size: 2.5rem;
+    }
+
+    .project-intro {
+        font-size: 1.1rem;
+    }
+
+    .project-meta {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .case-study-section h2 {
+        font-size: 2rem;
+    }
+
+    .case-study-section h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Stack text and image vertically on smaller screens */
+    .text-image-layout {
+        flex-direction: column;
+        gap: 20px; /* Reduce gap when stacked */
+    }
+
+    .text-image-layout.reverse {
+        flex-direction: column; /* Ensure it stacks even if reversed */
+    }
+
+    .text-image-layout .text-content,
+    .image-container {
+        min-width: unset; /* Remove min-width when stacked */
+        width: 100%; /* Take full width when stacked */
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-case-study {
+        padding: 20px;
+    }
+
+    .project-overview h1 {
+        font-size: 2rem;
+    }
+
+    .project-intro {
+        font-size: 1rem;
+    }
+
+    .case-study-section h2 {
+        font-size: 1.7rem;
+    }
+
+    .case-study-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .image-caption {
+        font-size: 0.85rem;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+   
+
+   
+
