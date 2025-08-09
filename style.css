@@ -6,6 +6,8 @@
 }
 
 body {
+    max-width: 1600px;
+    margin: auto;
     background-color: rgb(250, 244, 218);
     font-family: "Rubik", sans-serif;
     color: #333;
@@ -62,24 +64,26 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 20px 80px;
     background-color: #f4bd0a5b;
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-radius: 30px;
+    border-radius: 25px;
     margin: 20px;
     backdrop-filter: blur(10px);
     
 }
 
 header .logo img {
-    height: 30px; 
+    height: 40px;
+    padding-left: 50px; 
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    padding-right: 50px;
 }
 
 nav ul li {
