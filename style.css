@@ -58,6 +58,11 @@ h2{
     to { transform: scale(1); opacity: 1; }
 }
 
+.Boldpoint{
+    font-weight: 500;
+    color: #f4730a;
+}
+
 
 /* Header */
 header {
