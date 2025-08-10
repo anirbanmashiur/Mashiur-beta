@@ -4,6 +4,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    max-width: 1600px;
+    margin: auto;
+    background-color: rgb(250, 244, 218);
+    font-family: "Rubik", sans-serif;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden; 
+}
 
 .project-main {
     padding: 60px 80px;
