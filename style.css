@@ -243,6 +243,7 @@ body.mobile-nav-active nav {
 
 @media (min-width: 400px) {
     .hero-section {
+       
         height: 70vh; /* Adjust height for tablets */
     }
     .hero-content {
