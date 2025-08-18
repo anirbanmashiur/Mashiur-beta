@@ -174,9 +174,9 @@ body.mobile-nav-active nav {
     overflow: hidden;
 
     /* Background animation */
-    background-size: cover;
+    /* background-size: cover;
     background-position: center;
-    animation: slider 15s infinite ease-in-out;
+    animation: slider 15s infinite ease-in-out; */
     
 }
 
@@ -221,8 +221,8 @@ body.mobile-nav-active nav {
 }
 
 .profile-photo {
-    width: 300px; 
-    border-radius: 50%; 
+    width: 600px; 
+    /* border-radius: 50%;  */
     
     
 }
