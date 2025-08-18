@@ -7,20 +7,20 @@
 body {
     max-width: 1600px;
     margin: auto;
-    background-color: rgb(250, 244, 218);
+    background-color: rgb(29, 29, 29);
     font-family: "Rubik", sans-serif;
-    color: #333;
+    color:  rgb(255, 241, 204);
     line-height: 1.6;
     overflow-x: hidden; 
 }
 
 .project-main {
     padding: 60px 80px;
-    background-color: rgb(255, 247, 235);
+     background-color: rgb(19, 19, 19);
 }
 
 .project-case-study {
-    background-color:rgb(255, 255, 247);
+    background-color:rgba(124, 91, 1, 0.123);
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
