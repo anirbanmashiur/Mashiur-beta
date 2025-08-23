@@ -12,6 +12,7 @@ body {
     color:  rgb(255, 241, 204);
     line-height: 1.6;
     overflow-x: hidden; 
+    
 }
 
 .project-main {
@@ -113,7 +114,7 @@ body {
 
 .text-image-layout .text-content {
     flex: 1; /* Allows text to take available space */
-    min-width: 300px; /* Minimum width before wrapping */
+    min-width: 100px; /* Minimum width before wrapping */
 }
 
 /* Image Containers */
@@ -143,6 +144,15 @@ body {
     color: var(--secondary-color);
     margin-top: 10px;
     margin-bottom: 0;
+}
+
+.image-containervideo{
+    flex: 1; 
+    min-width: 100px; 
+    text-align: center; 
+    margin: 0;
+    gap: 20px; 
+
 }
 
 /* --- Next Project Navigation --- */
@@ -257,6 +267,7 @@ body {
 
     /* Stack text and image vertically on smaller screens */
     .text-image-layout {
+        max-width: 100px;
         flex-direction: column;
         gap: 20px; /* Reduce gap when stacked */
     }
@@ -275,6 +286,11 @@ body {
         padding: 10px 20px;
         font-size: 0.95rem;
     }
+
+}
+.image-containervideo{
+    max-width:250px;
+    gap: 20px;
 }
 
 @media (max-width: 480px) {
