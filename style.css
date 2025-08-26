@@ -177,18 +177,19 @@ body.mobile-nav-active nav {
     overflow: hidden;
 
     /* Background animation */
-    /* background-size: cover;
+    /* background-size: cover; 
     background-position: center;
-    animation: slider 15s infinite ease-in-out; */
+    animation: slider 15s infinite ease-in-out;  */
     
 }
+
 
 @keyframes slider {
     0% {
         background-image: url('./Assets/works/BG1.png');
     }
     25% {
-        background-image: url('./Assets/works/BG2.png'); 
+        background-image: url('./Assets/works/BG2.png');  
     }
     50% {
         background-image: url('./Assets/works/BG3.png');
@@ -502,13 +503,13 @@ body.mobile-nav-active nav {
     height: 60px; /* Adjust logo height */
     margin: 0 40px;
     vertical-align: middle;
-    filter: grayscale(80%); /* Optional: make them grayscale */
+    filter:brightness(40%); 
     opacity: 0.7;
     transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
 .logos-track img:hover {
-    filter: grayscale(0%);
+    filter:brightness(100%);
     opacity: 1;
 }
 
