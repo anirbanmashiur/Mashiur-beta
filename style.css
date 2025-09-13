@@ -214,7 +214,7 @@ body.mobile-nav-active nav {
 .hero-content {
     position: relative;
     z-index: 1;
-    max-width: 450px; 
+    max-width: 750px; 
     width: calc(100% - 40px); 
     margin: 0 auto; 
 }
@@ -223,11 +223,11 @@ body.mobile-nav-active nav {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    gap: 20px; 
+    gap: 10px; 
 }
 
 .profile-photo {
-    width: 600px; 
+    width: 700px; 
     /* border-radius: 50%;  */
     
     
@@ -238,8 +238,8 @@ body.mobile-nav-active nav {
 }
 
 .hero-text-content h1 {
-    font-size: 2.5em; /* Mobile font size */
-    margin-bottom: 5px; /* Reduced margin */
+    font-size: 1em; /* Mobile font size */
+    margin-bottom: 2px; /* Reduced margin */
    
     line-height: 1.2;
 }
