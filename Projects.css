@@ -106,6 +106,7 @@ body {
     gap: 40px; /* Space between text and image */
     margin: 40px 0; /* Margin around this layout block */
     flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    padding: 40px;
 }
 
 .text-image-layout.reverse {
@@ -267,9 +268,10 @@ body {
 
     /* Stack text and image vertically on smaller screens */
     .text-image-layout {
-        max-width: 100px;
+        max-width: 100%;
         flex-direction: column;
         gap: 20px; /* Reduce gap when stacked */
+        padding: 30px;
     }
 
     .text-image-layout.reverse {
@@ -317,6 +319,7 @@ body {
     .image-caption {
         font-size: 0.85rem;
     }
+    
 
 
 }
