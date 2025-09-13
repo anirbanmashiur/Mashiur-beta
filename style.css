@@ -515,7 +515,7 @@ body.mobile-nav-active nav {
 
 @keyframes scrollLogos {
     from { transform: translateX(0%); }
-    to { transform: translateX(-50%); } /* Half the width to loop */
+    to { transform: translateX(-50%); } 
 }
 
 
