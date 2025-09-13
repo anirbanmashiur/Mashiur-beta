@@ -112,22 +112,24 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #fdeda6; /* Example hover color */
+    color: #fc8c0c; /* Example hover color */
 }
 
 .dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: rgb(250, 244, 218);
+    background-color: #fcc922be;
     list-style: none;
-    padding: 10px 0;
+    padding: 20px 0;
     min-width: 180px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
     opacity: 0;
     visibility: hidden;
     transform: translateY(10px);
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    border-radius: 25px;
 }
 
 .has-dropdown:hover .dropdown-menu {
@@ -252,7 +254,7 @@ body.mobile-nav-active nav {
 @media (min-width: 400px) {
     .hero-section {
        
-        height: 70vh; /* Adjust height for tablets */
+        height: 80vh; /* Adjust height for tablets */
     }
     .hero-content {
         padding: 10px 20px;
@@ -261,7 +263,7 @@ body.mobile-nav-active nav {
     }
     .profile-photo {
         
-        width: 200px; 
+        width: 400px; 
         height:auto;
         padding-top: 10px;
     }
