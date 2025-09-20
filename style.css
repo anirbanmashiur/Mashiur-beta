@@ -9,7 +9,7 @@
 body {
   max-width: 1600px;
   margin: auto;
-  background-color: rgb(29, 29, 29);
+  background-color: rgb(230, 229, 228);
   font-family: "Rubik", sans-serif;
   color: #333;
   line-height: 1.6;
@@ -76,11 +76,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 80px;
-  background-color: #fcc922be;
+  background-color: #ececd3be;
   position: sticky;
   top: 0;
   z-index: 1000;
   border-radius: 25px;
+  border-bottom: solid #fc8c0c;
   margin: 20px;
   backdrop-filter: blur(10px);
 }
@@ -128,6 +129,7 @@ nav ul li a:hover {
   transform: translateY(10px);
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
   border-radius: 25px;
+  border-bottom: solid #fc8c0c;
 }
 
 .has-dropdown:hover .dropdown-menu {
@@ -177,28 +179,14 @@ body.mobile-nav-active nav {
   overflow: hidden;
 
   /* Background animation */
-  /* background-size: cover; 
-    background-position: center;
-    animation: slider 15s infinite ease-in-out;  */
+    
+    background-image: url("./Assets/works/BG2.png");background-size: cover; 
+    
+    
+    
 }
 
-@keyframes slider {
-  0% {
-    background-image: url("./Assets/works/BG1.png");
-  }
-  25% {
-    background-image: url("./Assets/works/BG2.png");
-  }
-  50% {
-    background-image: url("./Assets/works/BG3.png");
-  }
-  75% {
-    background-image: url("./Assets/works/BG4.png");
-  }
-  100% {
-    background-image: url("./Assets/works/BG1.png");
-  }
-}
+
 
 .hero-content {
   position: relative;
@@ -224,8 +212,8 @@ body.mobile-nav-active nav {
 }
 
 .hero-text-content h1 {
-  font-size: 1em; /* Mobile font size */
-  margin-bottom: 2px; /* Reduced margin */
+  font-size: 1rem; /* Mobile font size */
+  margin-bottom: 1px; /* Reduced margin */
 
   line-height: 1.2;
 }
@@ -235,17 +223,23 @@ body.mobile-nav-active nav {
   min-height: 1.5em;
   font-weight: 400;
   color: #f4730a;
+  
 }
 
-@media (min-width: 400px) {
+@media (min-width: 394px) {
   .hero-section {
-    height: 80vh; /* Adjust height for tablets */
+    height: 58vh; /* Adjust height for tablets */
+    background-size:cover;
+    background-position:right;
   }
+    
   .hero-content {
     padding: 10px 20px;
     max-width: 250px; /* Constrain width for better readability on tablets */
     width: auto; /* Reset width to auto for flex content */
+    
   }
+  
   .profile-photo {
     width: 400px;
     height: auto;
@@ -318,7 +312,7 @@ body.mobile-nav-active nav {
 
 /* My Work Section */
 .my-work-section {
-  background-color: rgb(29, 29, 29);
+  background-color: rgb(212, 212, 211);
   padding: 80px 50px;
   text-align: center;
 }
@@ -331,7 +325,7 @@ body.mobile-nav-active nav {
 }
 
 .category-card {
-  background-color: #303030d5;
+  background-color: #ececd3dc;
   padding: 30px;
   border-radius: 12px;
 
@@ -347,7 +341,7 @@ body.mobile-nav-active nav {
 }
 
 .category-card h3 {
-  color: #f4bf0a;
+  color:  rgb(43, 42, 42);
   font-size: 1.5em;
 }
 
@@ -388,7 +382,7 @@ body.mobile-nav-active nav {
 
 /* Skills Section */
 .skills-section {
-  background-color: rgb(29, 29, 29);
+  background-color: rgb(230, 229, 228);
   padding: 80px 50px;
   text-align: center;
 }
@@ -401,14 +395,15 @@ body.mobile-nav-active nav {
 }
 
 .skill-card {
-  background-color: #f8ee8f5b;
+  background-color: #ececd3dc;
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   opacity: 0; /* For scroll reveal */
   transform: translateY(20px);
-  color: rgb(255, 241, 204);
+  color:  rgb(43, 42, 42);
+  text-align:left;
 }
 
 .skill-card.revealed {
@@ -425,6 +420,7 @@ body.mobile-nav-active nav {
 .software-section {
   padding: 80px 50px;
   text-align: center;
+  background-color: rgb(212, 212, 211);
 }
 
 .software-icons {
