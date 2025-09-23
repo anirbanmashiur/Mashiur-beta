@@ -228,9 +228,9 @@ body.mobile-nav-active nav {
 
 @media (min-width: 394px) {
   .hero-section {
-    height: 58vh; /* Adjust height for tablets */
-    background-size:cover;
-    background-position:right;
+    height: 59vh; /* Adjust height for tablets */
+    
+    
   }
     
   .hero-content {
