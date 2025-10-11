@@ -48,7 +48,7 @@ h3 {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 @keyframes pulse {
   from {
@@ -165,6 +165,7 @@ nav ul li a:hover {
 /* Mobile Nav Styles (to be toggled by JS) */
 body.mobile-nav-active nav {
   display: block;
+  border-radius: 20px;
 }
 
 /* Hero Section */
@@ -212,7 +213,7 @@ body.mobile-nav-active nav {
 }
 
 .hero-text-content h1 {
-  font-size: 1rem; /* Mobile font size */
+  font-size: 3rem; /* Mobile font size */
   margin-bottom: 1px; /* Reduced margin */
 
   line-height: 1.2;
@@ -228,9 +229,11 @@ body.mobile-nav-active nav {
 
 @media (min-width: 394px) {
   .hero-section {
-    height: 59vh; /* Adjust height for tablets */
-    
-    
+    height: 60vh; /* Adjust height for tablets */
+     
+  }
+   .hero-text-content h1 {
+    font-size: 3em;
   }
     
   .hero-content {
@@ -240,11 +243,6 @@ body.mobile-nav-active nav {
     
   }
   
-  .profile-photo {
-    width: 400px;
-    height: auto;
-    padding-top: 10px;
-  }
 }
 
 @media (min-width: 700px) {
@@ -268,11 +266,7 @@ body.mobile-nav-active nav {
   .hero-text-content {
   }
 
-  .profile-photo {
-    width: 400px;
-    height: auto;
-    padding-top: 20px;
-  }
+  
 
   .hero-text-content h1 {
     font-size: 4em;
@@ -311,25 +305,30 @@ body.mobile-nav-active nav {
 }
 
 /* My Work Section */
+
 .my-work-section {
   background-color: rgb(212, 212, 211);
-  padding: 80px 50px;
+  padding: 50px 20px;
   text-align: center;
 }
 
 .work-categories-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 80px;
   margin-top: 50px;
 }
 
+
 .category-card {
-  background-color: #ececd3dc;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(27, 22, 7, 0.363), rgba(255, 165, 0, 0));
   padding: 30px;
   border-radius: 12px;
 
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.8s ease, box-shadow 0.4s ease;
   cursor: pointer;
   /* Initial state for scroll reveal */
   opacity: 0;
@@ -337,13 +336,16 @@ body.mobile-nav-active nav {
 }
 
 .category-card p {
-  color: #f2f2f2;
+  color: rgb(43, 42, 42);
+  
 }
 
 .category-card h3 {
   color:  rgb(43, 42, 42);
   font-size: 1.5em;
+  padding-top: 20px;
 }
+
 
 .category-card img {
   width: 100%;
@@ -361,8 +363,14 @@ body.mobile-nav-active nav {
   }
 
   .category-card {
+    grid-template-columns: repeat(2, 1fr);
     width: 100%;
+    background: linear-gradient(to right, rgba(27, 22, 7, 0.363), rgba(255, 165, 0, 0));
   }
+  .category-card p {
+  padding: 0 40px;
+  
+}
   .category-card h3 {
     font-size: 2em;
   }
@@ -374,9 +382,10 @@ body.mobile-nav-active nav {
   }
 
   .category-card:hover {
+    
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 8px 25px rgba(255, 181, 21, 0.274);
-    border: solid rgb(248, 113, 22);
+    border-bottom: solid rgb(248, 113, 22);
   }
 }
 
@@ -395,7 +404,7 @@ body.mobile-nav-active nav {
 }
 
 .skill-card {
-  background-color: #ececd3dc;
+  background-color: #f3f3f3dc;
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
