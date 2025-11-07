@@ -337,3 +337,60 @@ body {
 
 
 
+/* --- Seamless Auto-Scrolling Gallery --- */
+.image-scroller {
+    --image-height: 360px;
+    --image-width: 300px;
+    --gap: 0px;
+    --duration: 150s;
+    margin: 40px 0 0;
+    padding: 20px 0 0;
+    overflow: hidden;
+}
+
+.image-scroller .scroller {
+    overflow: hidden;
+}
+
+.image-scroller .scroller__track {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+    width: max-content;
+    animation: scroller-move var(--duration) linear infinite;
+}
+
+
+.image-scroller img {
+    height: var(--image-height);
+    width: var(--image-width);
+    object-fit: cover;
+    flex: 0 0 auto;
+    border-radius: 0;
+    box-shadow: 0 2px 10px var(--shadow-light);
+    background: var(--white);
+}
+
+@keyframes scroller-move {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+
+/* Responsive sizing and speed tweaks */
+@media (min-width: 700px) {
+    .image-scroller {
+        --image-height: 360px;
+        --image-width: 300px;
+        --gap: 0px;
+        --duration: 180s;
+    }
+}
+
+@media (min-width: 1000px) {
+    .image-scroller {
+        --image-height: 360px;
+        --image-width: 300px;
+        --gap: 0px;
+        --duration: 200s;
+    }
+}
